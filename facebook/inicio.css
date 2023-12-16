@@ -1,0 +1,249 @@
+*{
+    border-radius: 20px;
+}
+
+body{
+    justify-content: center;
+
+    background-color: rgb(238, 238, 238);
+}
+
+.grid-layout{
+    position: relative;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: "head head      head"
+                         "func historias personas"
+                         "func actEs     personas"
+                         "func memes     personas";
+    grid-template-columns: 15% 70% 15%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    grid-area: head;
+    background-color: rgb(244, 247, 251);
+}
+
+.c1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c1:nth-child(2){
+    width: 30vw;
+}
+
+.head img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+.historias{
+    display: flex;
+    overflow-x: scroll;
+    margin: 3vh;
+    grid-area: historias;
+}
+
+.historias .estados{
+    background-color: red;
+    height: 25vh;
+    width: 15vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+} 
+
+.historias .estados div{
+    text-align: center;
+    background-color: azure;
+    width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+
+}
+
+
+
+.actEs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: actEs;
+    margin: 3vh;
+    background-color: rgb(244, 247, 251);
+}
+
+.actEs .pub{
+    align-items: center;
+    display: flex;
+    justify-content:  center;
+    margin: 3px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.actEs .pub input{
+    height: 80%;
+    width: 90%;
+    background-color: rgb(215, 215, 215);
+    font-size: 17px;
+}
+
+.actEs .pub:hover{
+    
+    background-color: rgba(0, 0,0,.1);
+    
+}
+
+
+.pub:nth-child(1){
+    width: 100%;
+    
+} 
+.memes{
+    grid-area: memes;
+    margin: 3vh;
+    background-color: rgb(244, 247, 251);
+}
+
+
+nav{
+    display: flex;
+    align-items: start;
+    height:  100%;
+}
+
+section header nav input{
+    border-radius: 25px;
+    background-color: rgb(211, 210, 209);
+    height: 45px;
+    border-color: rgb(193, 193, 193);
+}
+.opcsup{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(185, 232, 232);
+}
+
+.opcsup img{
+    border-radius: 50%;
+}
+
+#yok{
+    border-radius: 50%;
+    height: 50px;
+    
+}
+
+#deigos{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#memebosq{
+    border-radius: 0px;
+    height: 19em;
+}
+
+.menuIzq{
+    position: fixed;
+    grid-area: func;
+    margin: 3vh;
+}
+
+.menuIzq .funciones{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid grey 1px;
+    border-radius: 0px;
+}
+
+.menuIzq .funciones .func{
+    display: flex;
+    height: 55px;
+}
+
+.menuIzq .juegos{
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    line-height: 55px;
+    
+}
+
+.menuIzq .juegos .juego{
+    display: flex;
+    height: 55px;
+}
+
+.menuIzq .juegos .juego:hover{
+    
+    background-color: rgba(0, 0, 0,.1);
+    
+}
+
+#bw{
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.menuIzq .funciones .func:hover{
+    
+    
+    background-color: rgba(0, 0,0,.1);
+    
+}
+
+
+#guait{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.menuDer{
+    grid-area: personas;
+    margin: 3vh;   
+}
+
+
+.menuDer .solicitudes .solicitud{
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0,0,.1);
+}
+
+.menuDer .solicitudes .solicitud:hover {
+    background-color: rgba(0, 0, 0,.5);
+}
+
+
+.menuDer .contactos .contacto {
+    background-color: rgba(0, 0,0,.1);
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+.menuDer .contactos .contacto:hover {
+    background-color: rgba(0, 0, 0,.5);
+}

@@ -1,0 +1,66 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+ }
+
+ .grid-layout{
+    margin: 0px;
+    display: grid;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(75, 75, 222);
+    grid-template-areas: "header header header"
+                "formu formu formu"
+                "footer footer footer";
+    grid-template-rows: 10% 80% 10%;
+
+}
+
+table{
+    text-align: center;
+}
+header{
+    font-size: 5vh;
+    text-align: center;
+    grid-area: header;
+    color: azure;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+grid-area: formu;
+}
+
+input{
+    width: 180px;
+}
+
+label{
+    color:azure ;
+}
+
+.footer{
+    display: block;
+    background-color: rgb(105, 105, 215);
+    color: azure;
+    text-align: center;
+    grid-area: footer;
+}
+a{
+    
+    color: azure;
+}
+#submit{
+    height: 100%;
+    width: 100%;
+    border: solid 1px darkblue ;
+    background-color: rgba(0, 0, 0, .3);
+ }
+
+ #submit:hover{
+    color: azure;
+    background-color: rgba(0, 0, 0, .8);
+}
